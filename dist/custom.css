@@ -1,0 +1,81 @@
+/* Keyframes for the animation */
+@keyframes moveBottomToTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(400%);
+    }
+}
+
+/* Apply animation to the paragraph */
+#animatedText {
+    animation: moveBottomToTop 10s linear infinite;
+}
+
+ 
+.bungee-spice-regular {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  #photoPreview,
+  #signaturePreview {
+      background-size: cover;
+      background-position: center;
+  }
+  #photoPreview{
+    height: 180px;
+    width: 150px;
+  }
+  #signaturePreview{
+height: 80px;
+width: 250px;
+  }
+
+
+
+   /* view zoome in image */
+   /* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: 40px auto auto auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .text-gray-900{
+    font-size: 15px !important;
+  }
